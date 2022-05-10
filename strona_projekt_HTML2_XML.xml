@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strona_projekt_HTML2_XML_SCHEMA.xs">
+    <tresc o_czym="slimaki">
+        <temat typ="Elysia_Chlorotica">
+            <rok_odkrycia >1870</rok_odkrycia>
+            <tekst><nazwa>ElysiaChlorotica</nazwa> - morskiego ślimaka tyłoskrzelnego z 
+            rodziny Elysiidae.Ubarwieniem, kształtem ciała i 
+            sposobem odżywiania przypomina liść.</tekst>
+            <obraz source="img/Elysia_Chlorotica.jpg"></obraz>
+        </temat>
+        <temat typ="Glaucus_Atlanticus">
+            <rok_odkrycia>1777</rok_odkrycia>
+            <tekst> <nazwa>Glaucus Atlanticus</nazwa> - gatunek ten można spotkać w wodach pelagialnych
+             u wybrzeży europejskich,RPA, oraz na wschodnich wodach 
+             oblewających Mozambik i Australię.</tekst>
+            <obraz source="img/Glaucus_Atlanticus.jpg"></obraz>
+        </temat>
+        <temat typ="Phyllodesmium_Poindimiei">
+           <rok_odkrycia>1928</rok_odkrycia>
+            <tekst><nazwa>Phyllodesmium Poindimiei</nazwa> - 
+            jeden z niewielu gatunków, który 
+            nie posiada w swoich tkankach zooxanthellae,
+            czyli jednokomórkowych bruzdnic.</tekst>
+            <obraz source="img/Phyllodesmium_Poindimiei.jpg"></obraz>
+        </temat>
+    </tresc>
+
+    <linki do_czego="informacje o slimakach">
+		<link source="https://encyklopedia.pwn.pl/haslo/slimaki-morskie;3984057.html">pwn</link>
+		<link source="https://ciekawe.org/2016/06/14/niezwykle-morskie-slimaki">ciekawe.org</link>
+		<link source="https://www.nurkomania.pl/fauna_slimaki_morskie_jadowite.htm">nurkomania</link>
+	</linki>
+
+    <informacje do="autor">
+        <autor dane="osobowe">
+            <imie_i_nazwisko>Imiesława Nazwiskowa</imie_i_nazwisko>
+        </autor>
+        <kontakt>
+            <nr_tel>123-456-789</nr_tel>
+            <adres>
+                <ulica>Ulicowa</ulica>
+                <miasto>Miastowo</miasto>
+                <kod_poczt>12-345</kod_poczt>
+            </adres>
+        </kontakt>
+    </informacje>
+
+    <kod_bonusowy>1 2 3 4 5</kod_bonusowy>
+    
+
+</content>

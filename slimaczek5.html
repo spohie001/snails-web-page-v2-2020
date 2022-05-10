@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang=pl>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Morskie ślimaki zachwycą każdego!</title>
+        <link rel="stylesheet" href="strona_projekt CSS.css">
+    </head>
+    <body>
+<!----------------------------------------------------------------------------------------------------->        
+        <div id="wrapper">
+                <header>
+                        
+                        <div class="logo">
+                                <img src="Gary_the_Snail_picture_logo.png" width="50px" height="50px" >
+                                <span style="text-decoration: line-through solid red">Nie</span> bądź mięczak
+                        </div>
+                </header>
+        <!----------------------------------------------------------------------------------------------------->
+                 <div class="nav">
+                         <ol>
+                                <li><a href="strona_projekt HTML.html">Strona główna</a></li>
+                                <li><a href="strona_projekt HTML2.html">Ślimaczki</a>
+                                        <ul>
+                                                <li><a href="slimaczek1.html">Morska Owca</a></li>
+                                                <li><a href="slimaczek2.html">Phyllodesmium Poindimiei</a></li>
+                                                <li><a href="slimaczek3.html">Elysia Chlorotica</a></li>
+                                                <li><a href="slimaczek4.html">Glaucus Atlanticus</a></li>
+                                                <li><a class="active" href="slimaczek5.html">Elysia Crispata</a></li>
+                                        </ul>
+                                </li>
+                                <li><a href="strona_projekt HTML3.html">Twój pomysł</a></li>
+                         </ol>
+               
+                </div >
+        <!----------------------------------------------------------------------------------------------------->           
+                  <div class="content">
+                        <img class="img1" src="img/Elysia Crispata2.jpg" width="340px" height="416px">
+
+                        Gatunek ten nazywany jest ślimakiem sałatowym, ponieważ często ma zielony kolor i 
+                        zawsze ma bardzo plisowany brzeg na parapodii. To sprawia, że ślimak przypomina
+                         kędzierzawe rodzaje sałaty, takie jak odmiana lollo rosso. Maksymalna długość tego gatunku
+                          to około 5 cm i 3 cm szerokości.
+
+Ślimak sałaty ma niezwykle zmienny kolor:
+ może być również niebieski lub bardzo blady z czerwonymi lub żółtymi liniami.
+ Gatunek ten żyje w tropikalnych częściach zachodniego Atlantyku i karaibskiej strefie fauny.
+  Występują w bardziej przybrzeżnych i tropikalnych obszarach rafy, gdzie woda jest płytka i czysta.
+  E. crispata może być heterotroficzne lub autotroficzne przez cały okres swojego życia.
+   W młodym wieku pokarm jest szybko spożywany i trawiony, przy niewielkiej retencji chloroplastów.
+    Po osiągnięciu dojrzałości kleptoplastyka staje się ważnym źródłem energii.  
+  Główne źródło pożywienia E. crispata jest stosunkowo nieznane, chociaż wiadomo, że niektóre osobniki zjadają różnorodne gatunki glonów.
+        
+                  </div>
+        <!----------------------------------------------------------------------------------------------------->
+                <footer>
+        
+        Copyrights &copy; Zofia Sosińska 2020
+                </footer>
+
+        </div>
+<!----------------------------------------------------------------------------------------------------->        
+ <script src="jquery-3.5.1.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+        </body>
+</html>
+
+

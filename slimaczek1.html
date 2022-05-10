@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang=pl>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Morskie ślimaki zachwycą każdego!</title>
+        <link rel="stylesheet" href="strona_projekt CSS.css">
+    </head>
+    <body>
+<!----------------------------------------------------------------------------------------------------->        
+        <div id="wrapper">
+                <header>
+                        
+                        <div class="logo">
+                                <img src="Gary_the_Snail_picture_logo.png" width="50px" height="50px" >
+                                <span style="text-decoration: line-through solid red">Nie</span> bądź mięczak
+                        </div>
+                </header>
+        <!----------------------------------------------------------------------------------------------------->
+                 <div class="nav">
+                         <ol>
+                                <li><a href="strona_projekt HTML.html">Strona główna</a></li>
+                                <li><a href="strona_projekt HTML2.html">Ślimaczki</a>
+                                        <ul>
+                                                <li><a class="active" href="slimaczek1.html">Morska Owca</a></li>
+                                                <li><a href="slimaczek2.html">Phyllodesmium Poindimiei</a></li>
+                                                <li><a href="slimaczek3.html">Elysia Chlorotica</a></li>
+                                                <li><a href="slimaczek4.html">Glaucus Atlanticus</a></li>
+                                                <li><a href="slimaczek5.html">Elysia Crispata</a></li>
+                                        </ul>
+                                </li>
+                                <li><a href="strona_projekt HTML3.html">Twój pomysł</a></li>
+                         </ol>
+               
+                </div >
+        <!----------------------------------------------------------------------------------------------------->           
+                  <div class="content1">
+                          <img class="img1" src="img/sea sheep2.jpg" width="300px" height="350px">
+                    <b>Morska Owca (Costasiella Kuroshimae)</b>
+                    Przeurocze połączdnie liścia, królika i owieczki - maleńki, bo zaledwie centymetrowy,
+                     tyłoskrzelec ma w zanadrzu niezwykłą sztuczkę. Dzięki swej diecie, skłądającej się z alg,
+                      potrafi przeprowadzić proces, na pierwszy rzut oka zarezerwowany dla roślin, czyli fotosyntezę.
+                       Zawdzięcza to kleptoplastji - symbiozie, występującej pomiędzy plastydami glonów, a organizmami żerującymi na nich.
+                        Mięczak występuje w wodach wokół Japońskich wysp.
+        
+                  </div>
+        <!----------------------------------------------------------------------------------------------------->
+                <footer>
+        
+        Copyrights &copy; Zofia Sosińska 2020
+                </footer>
+
+        </div>
+<!----------------------------------------------------------------------------------------------------->        
+ <script src="jquery-3.5.1.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+        </body>
+</html>
+
+

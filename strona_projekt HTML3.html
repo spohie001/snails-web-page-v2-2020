@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang=pl>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Morskie ślimaki zachwycą każdego!</title>
+        <link rel="stylesheet" href="strona_projekt CSS.css">
+    </head>
+    <body>
+<!----------------------------------------------------------------------------------------------------->        
+        <div id="wrapper">
+                <header>
+                        
+                        <div class="logo">
+                                <img src="Gary_the_Snail_picture_logo.png" width="50px" height="50px" >
+                                <span style="text-decoration: line-through solid red">Nie</span> bądź mięczak
+                        </div>
+                </header>
+        <!----------------------------------------------------------------------------------------------------->
+                 <div class="nav">
+                         <ol>
+                                <li><a href="strona_projekt HTML.html">Strona główna</a></li>
+                                <li><a href="strona_projekt HTML2.html">Ślimaczki</a>
+                                    <ul>
+                                        <li><a href="slimaczek1.html">Morska Owca</a></li>
+                                                <li><a href="slimaczek2.html">Phyllodesmium Poindimiei</a></li>
+                                                <li><a href="slimaczek3.html">Elysia Chlorotica</a></li>
+                                                <li><a href="slimaczek4.html">Glaucus Atlanticus</a></li>
+                                                <li><a href="slimaczek5.html">Elysia Crispata</a></li>
+                                </ul>
+                                </li>
+                                <li><a class="active" href="strona_projekt HTML3.html">Twój pomysł</a></li>
+                         </ol>
+               
+                </div >
+        <!----------------------------------------------------------------------------------------------------->           
+                  <div class="content">
+                        <h2>Ankieta</h2>
+                        <form action="/action.php">
+                        Imię:
+                        <input type="text" name="Imię" value="Proszę podać imię"><br/>
+                        <form action="/action.php" method="POST">
+                        Nazwisko:
+                        <input type="text" name="Nazwisko" value="Proszę podać nazwisko"><br/>
+
+                        <label for="pswd">Pesel:</label>
+                        <input type="password" name="Pesel" value="Pesel"><br/>
+                        Gender:
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender"  value="male" checked>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender"  value="female"><br/>
+                        Czy kochasz ślimaczki:
+                        <input type="checkbox" name="Czy kochasz ślimaczki"  value="Tak" checked>Tak
+                        <input type="checkbox" name="Czy kochasz ślimaczki"  value="Oczywiście, że tak" checked>Oczywiście, że tak <br/>
+                        Ulubiony ślimaczek:
+                        <select>
+                        <option value="Morska Owca">Morska Owca</option>
+                        <option value="Phyllodesmium Poindimiei">Phyllodesmium Poindimiei</option>
+                        <option value="Elysia Chlorotica">Elysia Chlorotica</option>
+                        <option value="Glaucus Atlanticus">Glaucus Atlanticus</option>
+                        <option value="Elysia Crispata">Elysia Crispata</option>
+                        </select>
+                        
+                        <select name="Jak bardzo podoba ci się ten ślimaczek?" id="colorist">
+                        <option value="0">Jak bardzo podoba ci się ten ślimaczek?</option>
+                        <option value="b">bardzo</option>
+                        <option value="bb">bardzobardzo</option>
+                        
+                        </select>
+                        <br/><br/>
+                        <textarea rows="7" cols="70">
+                        Please, write your comment
+                        </textarea>
+                        <input type="reset" value="Wyczyść formularz!">
+                        <input type="submit" value="Wyślij!">
+                </form>
+        
+                  </div>
+        <!----------------------------------------------------------------------------------------------------->
+                <footer>
+        
+        Copyrights &copy; Zofia Sosińska 2020
+                </footer>
+
+        </div>
+<!----------------------------------------------------------------------------------------------------->        
+ <script src="jquery-3.5.1.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+        </body>
+</html>
+
+
